@@ -4,10 +4,10 @@
 Set-ExecutionPolicy -ExecutionPolicy 'RemoteSigned'
 
 
-# Install NuGet and Install PSWindowsUpdate Module
-Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
-Install-Module -Name PSWindowsUpdate -Force
-Import-Module PSWindowsUpdate
+# [Old] Install NuGet and Install PSWindowsUpdate Module
+#Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+#Install-Module -Name PSWindowsUpdate -Force
+#Import-Module PSWindowsUpdate
 
 # [Broken] Download the continous script to continue the process after reboot
 #Invoke-WebRequest "https://raw.githubusercontent.com/Bladeage/Auto-PSWindowsUpdate-Skript/main/Start.ps1" -OutFile "$env:LOCALAPPDATA\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
